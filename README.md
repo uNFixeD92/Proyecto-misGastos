@@ -62,14 +62,11 @@ al usuario se le permite crear nuevas categorias.
 - [x] usuarios pueden registrarse  (email debe ser unico)
 - [x] usuarios pueden logearse     ()
 - [x] usuario puede revisar todas sus notas
-- [x] usuario puede revisar 1 nota en especifico
-- [] 
-- [] 
-- [] 
-- [] 
-- [] 
-- [] 
-- [] 
+- [x] usuario puede revisar 1 nota en especifico (debe ser suya)
+- [x] usuario puede borrar notas
+- [x] usuario puede actualizar nota
+- [x] usuario puede crear nota
+
 
 <!-- User.where(username:"fmarcosdev") -->
 
