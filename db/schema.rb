@@ -10,24 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_25_235317) do
-
-  create_table "notes", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.string "nombre"
-    t.string "precio"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_notes_on_user_id"
+ActiveRecord::Schema.define(version: 20_210_225_235_317) do
+  create_table 'notes', force: :cascade do |t|
+    t.integer 'user_id', null: false
+    t.string 'nombre'
+    t.string 'precio'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.index ['user_id'], name: 'index_notes_on_user_id'
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "password_digest"
-    t.string "email"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table 'users', force: :cascade do |t|
+    t.string 'username'
+    t.string 'password_digest'
+    t.string 'email'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
 
-  add_foreign_key "notes", "users"
+  add_foreign_key 'notes', 'users'
 end

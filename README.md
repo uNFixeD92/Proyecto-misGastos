@@ -56,10 +56,22 @@ a fin de mes se manda al correo un resumen de las notas del mes terminado.
 al usuario se le permite crear nuevas categorias.
 
 
-# codigo
+# operaciones funcionales
 
-primero creaod para users y notes
-agregando las gemas necesarias
+
+- [x] usuarios pueden registrarse  (email debe ser unico)
+- [x] usuarios pueden logearse     ()
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+
+<!-- User.where(username:"fmarcosdev") -->
 
 
 
