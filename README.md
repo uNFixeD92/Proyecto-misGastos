@@ -3,7 +3,7 @@
 
 
 ## idea
-yo soy freddy huaylla y necesito alguna aplicacion para almacenar gastos futuros y actuales que deseo hacer para mi mismo.
+necesito alguna aplicacion para almacenar gastos futuros y actuales que deseo hacer para mi mismo.
 
 quiero tener un listado de "elementos" que deseo comprar y puedan verse facilmente y editarse 
 todos deben un nivel de prioridad para concentrarme en comprar lo que si es importante
@@ -54,6 +54,13 @@ las notas se filtran por gastos 'Pasados'
 las notas calcula el monto final de las notas por anio o por mes.
 a fin de mes se manda al correo un resumen de las notas del mes terminado.
 al usuario se le permite crear nuevas categorias.
+
+
+# codigo
+
+primero creaod para users y notes
+agregando las gemas necesarias
+
 
 
 
