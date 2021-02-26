@@ -5,9 +5,9 @@ class UsersController < ApplicationController
   def create
     @existe = User.exists?(email: user_params[:email])
 
-    if @existe   # correo esta registrado
+    if @existe # correo esta registrado
       render json: { error: 'este correo ya esta registrado en nuestra plataforma' }
-    else         # correo es nuevo
+    else       # correo es nuevo
       @user = User.create(user_params)
       if @user.valid? &&
          token = encode_token({ user_id: @user.id })

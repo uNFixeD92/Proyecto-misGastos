@@ -2,15 +2,32 @@ class NotesController < ApplicationController
   before_action :set_note, only: %i[show update destroy]
 
   # GET /notes
-  def index
-    @notes = Note.all
 
+  # poria recibir el id por param pero ya lo tengo disponible para varaible @global
+  def index
+    @notes = Note.where(user_id: @user.id)
     render json: @notes
   end
 
   # GET /notes/1
+  # el controlador usa rutas para acceder al recurso y lo regresa
   def show
-    render json: @note
+    # @notes = Note.where(user_id: @user.id)
+    if @note.user_id == @user.id
+      render json: @note
+    else
+      render json: { error: 'no tienes autorizacion para ver este contenido' }
+    end
+
+    # @notes = Note.where(user_id: @user.id)
+    # @buscado = note_params
+
+    # render json: @buscado
+
+    # render json: { error: :note_params }
+
+    # regresar mis notas
+    # regresa 1 de esas notas
   end
 
   # POST /notes
