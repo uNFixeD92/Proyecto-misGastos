@@ -67,8 +67,7 @@ al usuario se le permite crear nuevas categorias.
 - [x] usuario puede actualizar nota
 - [x] usuario puede crear nota
 
-
-<!-- User.where(username:"fmarcosdev") -->
+version minima para algun frontend
 
 
 
